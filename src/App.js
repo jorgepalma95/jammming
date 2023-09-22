@@ -40,26 +40,25 @@ const App = () => {
     Spotify.savePlaylist(playlistName, trackUris).then(() => {
       setPlaylistName("New Playlist");
       setPlaylistTracks([]);
+      alert("Your playlist has been sent to your Spotify account!")
     });
   }, [playlistName, playlistTracks]);
 
   return (
-    <div>
-      <h1>Jammming</h1>
       <div className="App">
-        <SearchBar onSearch={search}/>
-        <div className="App-playlist">
-          <SearchResults searchResults={searchResults} onAdd={addTrack} />
-          <Playlist 
-            playlistName={playlistName}
-            playlistTracks={playlistTracks}
-            onNameChange={updatePlaylistName}
-            onRemove={removeTrack}
-            onSave={savePlaylist}
-          />
-        </div>
+        <h1>Jammming</h1>
+          <SearchBar onSearch={search}/>
+          <div className="App-playlist">
+            <SearchResults searchResults={searchResults} onAdd={addTrack} />
+            <Playlist 
+              playlistName={playlistName}
+              playlistTracks={playlistTracks}
+              onNameChange={updatePlaylistName}
+              onRemove={removeTrack}
+              onSave={savePlaylist}
+            />
+          </div>
       </div>
-    </div>
   );
 }
 
