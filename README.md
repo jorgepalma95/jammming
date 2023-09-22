@@ -19,3 +19,11 @@ This web app allows users to:
 * Search songs in the Spotify library by artist or song's name
 * Add songs to a playlist and name it
 * Add created playlist to their Spotify accounts with one click
+
+# Socials
+
+Follow me on my social networks!
+
+- [Linkedin](https://www.linkedin.com/in/jorge-palma)
+- Instagram: [@jorgepalma](http://instagram.com/jorgepalma)
+- [E-mail](mailto:jorge_palma@icloud.com)
